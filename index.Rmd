@@ -41,7 +41,7 @@ sheet_is_publicly_readable <- TRUE
 PDF_EXPORT <- F
 
 
-CV_PDF_LOC <- "https://github.com/PamelaPairo/CV/blob/main/index.pdf"
+CV_PDF_LOC <- "https://github.com/PamelaPairo/CV/raw/main/index.pdf"
 CV_HTML_LOC <- "https://cv-pamepairo.netlify.app/"
 
 
