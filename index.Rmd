@@ -113,7 +113,7 @@ Disclaimer {#disclaimer}
 
 Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
 
-The source code is available at [**here**](https://github.com/PamelaPairo).
+The source code is available at [**here**](https://github.com/PamelaPairo/CV).
 
 Last updated on `r Sys.Date()`.
 
@@ -152,17 +152,6 @@ Publications {data-icon=file}
 --------------------------------------------------------------------------------
 
 ::: aside
-```{r}
-print_text_block(text_blocks, 'publications_aside')
-```
-:::
-
-
-```{r}
-print_section(position_data, 'publications')
-```
-
-::: aside
 
 ### Languages {#languages}
 
@@ -174,8 +163,13 @@ print_section(position_data, 'publications')
 
 - **French:** Elementary
 
-
 :::
+
+```{r}
+print_section(position_data, 'publications')
+```
+
+
 
 Grants and Fellowships {data-icon=trophy}
 --------------------------------------------------------------------------------
@@ -191,11 +185,6 @@ print_section(position_data, 'grants')
 Selected Talks and Presentations {data-icon=group}
 --------------------------------------------------------------------------------
 
-::: aside
-```{r}
-print_text_block(text_blocks, 'leadership_service_aside')
-```
-:::
 
 ```{r}
 print_section(position_data, 'presentations')
@@ -206,11 +195,6 @@ print_section(position_data, 'presentations')
 Volunteer and Outreach {data-icon=hands-helping}
 --------------------------------------------------------------------------------
 
-::: aside
-```{r}
-print_text_block(text_blocks, 'workshops_aside' )
-```
-:::
 
 ```{r}
 print_section(position_data, 'volunteer_outreach')
