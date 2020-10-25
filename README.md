@@ -1,4 +1,4 @@
-# My CV_Pairo
+# My CV_Pairo/resume
 
-I create my CV using pagedown package and datadrivencv.
+I create my CV and resume using pagedown package and datadrivencv.
 Thanks to @sctyner and @nstrayer
