@@ -4,10 +4,10 @@ author: Pamela Pairo
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
-    css: [ 'css/styles.css', 'resume']
+    css: ['css/styles.css', 'resume']
     # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: true
-#knit: pagedown::chrome_print
+#knit: pagedown::chrome_print 
 ---
 
 
@@ -99,7 +99,7 @@ build_skill_bars(skills)
 More info {#more-info}
 --------------------------------------------------------------------------------
 
-See full CV [**here**](cv-pamepairo.netlify.app/) 
+See full CV [**here**](https://cv-pamepairo.netlify.app/) 
 
 
 Disclaimer {#disclaimer}
