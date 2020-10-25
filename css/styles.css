@@ -10,7 +10,10 @@ body {
 }
 
 /* Main text is souce sans pro to match my website*/
-h1,
+h1  {
+font-family: 'Lexend Deca', serif;
+color: #000;
+}
 h2,
 h3 {
   font-family: "Source Sans Pro", serif;
@@ -37,7 +40,7 @@ sup {
 /* Customize some of the sizing variables */
 :root {
   --sidebar-width: 12rem; /* Shrink sidebar width  */
-  --sidebar-background-color: #FCF6FA; /* Make sidebar pink */
+  --sidebar-background-color: #E6E6FA; /* Make sidebar pink */
   --sidebar-horizontal-padding: 0.01in; /* Reduce sidebar padding */
   --decorator-outer-dim: 10px; /* Make position deliniating circles larger */
   --decorator-border: 2px solid #f6e5f2; /* Make timeline a pink as well*/
