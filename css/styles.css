@@ -40,7 +40,7 @@ sup {
 /* Customize some of the sizing variables */
 :root {
   --sidebar-width: 12rem; /* Shrink sidebar width  */
-  --sidebar-background-color: #E6E6FA; /* Make sidebar pink */
+  --sidebar-background-color: #F0FFF0; /* Make sidebar pink */
   --sidebar-horizontal-padding: 0.01in; /* Reduce sidebar padding */
   --decorator-outer-dim: 10px; /* Make position deliniating circles larger */
   --decorator-border: 2px solid #f6e5f2; /* Make timeline a pink as well*/
