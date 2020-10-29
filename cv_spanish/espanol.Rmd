@@ -1,0 +1,178 @@
+---
+title: CV de Pamela Pairo"
+author: Pamela Pairo
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['css/styles.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+#knit: pagedown::chrome_print 
+---
+
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+library(tidyverse)
+library(glue)
+
+# ======================================================================
+# These variables determine how the the data is loaded and how the exports are
+# done.
+
+# Is data stored in google sheets? If no data will be gather from the csvs/
+# folder in project
+using_googlesheets <- TRUE
+
+# Just the copied URL from the sheet
+positions_sheet_loc <- "https://docs.google.com/spreadsheets/d/165RD7Lo5v0zcRE1ioAB91YUVJTNw75_Ql4KCW0S0VnI/edit#gid=1406459246"
+
+# Is this sheet available for anyone to read? If you're using a private sheet
+# set this to false and go to gather_data.R and run the data loading manually
+# once to cache authentication
+sheet_is_publicly_readable <- TRUE
+
+# Is the goal of this knit to build a document that is exported to PDF? If so
+# set this to true to have links turned into footnotes at the end of the
+# document
+PDF_EXPORT <- FALSE
+
+
+# A global (gasp) variable that holds all the links that were inserted for
+# placement at the end
+links <- c()
+
+# ======================================================================
+# Now we source two external scripts. One contains functions for building the
+# text output and the other loads up our data from either googlesheets or csvs
+
+# Functions for building sections from CSV data
+source('parsing_functions.R') 
+
+# Load data for CV/Resume
+source('gather_data.R')
+
+# Now we just need to filter down the position data to include less verbose
+# categories and only the entries we have designated for the resume
+position_data <- position_data %>% 
+  filter(in_resume) %>% 
+  mutate(
+    # Build some custom sections by collapsing others
+    section = case_when(
+      section %in% c('research_positions', 'industry_positions') ~ 'positions', 
+      section %in% c('data_science_writings', 'by_me_press') ~ 'writings',
+      TRUE ~ section
+    )
+  ) 
+```
+
+
+
+Aside
+================================================================================
+
+
+![photo](pairo.png){width=80%}
+
+Contacto {#contact}
+--------------------------------------------------------------------------------
+
+```{r}
+contact_info %>% 
+  glue_data("- <i class='fa fa-{icon}'></i> {contact}")
+```
+
+
+
+Habilidades {#skills}
+--------------------------------------------------------------------------------
+
+```{r}
+build_skill_bars(skills)
+```
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+Hecho con [**pagedown**](https://github.com/rstudio/pagedown). 
+
+Código fuente: [github.com/PamelaPairo/cv](https://github.com/PamelaPairo/CV).
+
+Última actualización `r Sys.Date()`.
+
+
+Main
+================================================================================
+
+Pamela E. Pairo {#title}
+--------------------------------------------------------------------------------
+
+
+Educación {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('education')
+```
+
+Experiencia profesional {data-icon=chalkboard-teacher}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'profesional')
+```
+
+
+Cursos de posgrado destacados {data-icon=book}
+--------------------------------------------------------------------------------
+
+
+```{r}
+print_section(position_data, 'courses')
+```
+
+Publicaciones científicas {data-icon=file}
+--------------------------------------------------------------------------------
+::: aside
+
+### Idiomas {#languages}
+
+- **Inglés:** Avanzado
+
+- **Portugués:** Intermedio
+
+- **Francés:** Básico
+
+:::
+
+```{r}
+print_section(position_data, 'publications')
+```
+
+<!-- These breaks just force a new page so section doesnt get cut off -->
+<!--<br>-->
+
+Becas {data-icon=trophy}
+--------------------------------------------------------------------------------
+
+
+```{r}
+print_section(position_data, 'grants')
+```
+
+Presentaciones destacadas {data-icon=group}
+--------------------------------------------------------------------------------
+::: aside
+
+He participado como voluntaria en varios proyectos de investigacion en Argentina, Bolivia, Uruguay y Ecuador. Colaboré en tareas de rescate, rehabilitación y enriquecimiento de animales salvajes tales como los tortugas marinas, monos carayá, yaguaretés y pumas.
+
+:::
+
+
+```{r}
+print_section(position_data, 'presentations')
+```
+

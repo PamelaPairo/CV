@@ -7,7 +7,7 @@ output:
     css: ['css/styles.css', 'resume']
     # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: true
-knit: pagedown::chrome_print
+#knit: pagedown::chrome_print
 ---
 
 ```{r, include=FALSE}
