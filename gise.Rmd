@@ -124,7 +124,7 @@ print_section(position_data, 'posgraduate_courses')
 
 - **Histopathology**
 
-- **Morphometric analysis (Image J, Adobe Photoshop)** 
+- **Morphometric analysis** (Image J, Adobe Photoshop) 
 
 - **RT-PCR** 
 
@@ -136,9 +136,9 @@ print_section(position_data, 'posgraduate_courses')
 
 - **Oxidative stress techniques** 
 
-- **Animal handling (mouse, rat)** 
+- **Animal handling** (mouse, rat) 
 
-- **Cell culture (testicular explants)** 
+- **Cell culture** (testicular explants) 
 
 :::
 
