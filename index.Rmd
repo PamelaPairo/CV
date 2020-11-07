@@ -60,8 +60,6 @@ source('parsing_functions.R')
 source('gather_data.R')
 ```
 
-
-
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
 if(PDF_EXPORT){
@@ -79,8 +77,7 @@ Aside
 ================================================================================
 
 
-![photo](pairo.png){width=80%}
-
+![photo](pairo.png){width=85%}
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
 if(PDF_EXPORT){
@@ -89,6 +86,7 @@ if(PDF_EXPORT){
   glue("[<i class='fas fa-download'></i> Download a PDF of this CV]({CV_PDF_LOC})")
 }
 ```
+
 
 Contact {#contact}
 --------------------------------------------------------------------------------
@@ -140,6 +138,12 @@ Education {data-icon=graduation-cap data-concise=true}
 print_section(position_data, "education")
 ```
 
+Professional experience {data-icon=users}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'profesional')
+```
 
 
 Research Projects {data-icon=laptop}
@@ -149,7 +153,7 @@ Research Projects {data-icon=laptop}
 print_section(position_data, 'research_proj')
 ```
 
-Publications {data-icon=file}
+Publications {data-icon=newspaper}
 --------------------------------------------------------------------------------
 
 ::: aside
@@ -158,9 +162,9 @@ Publications {data-icon=file}
 
 - **Spanish:** Native 
 
-- **English:** Advance 
+- **English:** Upper Intermediate 
 
-- **Portuguese:**  Upper Intermediate
+- **Portuguese:** Intermediate
 
 - **French:** Elementary
 
@@ -190,7 +194,6 @@ Selected Talks and Presentations {data-icon=group}
 ```{r}
 print_section(position_data, 'presentations')
 ```
-
 
 
 Volunteer and Outreach {data-icon=hands-helping}
