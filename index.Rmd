@@ -156,19 +156,7 @@ print_section(position_data, 'research_proj')
 Publications {data-icon=newspaper}
 --------------------------------------------------------------------------------
 
-::: aside
 
-### Languages {#languages}
-
-- **Spanish:** Native 
-
-- **English:** Upper Intermediate 
-
-- **Portuguese:** Intermediate
-
-- **French:** Elementary
-
-:::
 
 ```{r}
 print_section(position_data, 'publications')
@@ -179,6 +167,19 @@ print_section(position_data, 'publications')
 Grants and Fellowships {data-icon=trophy}
 --------------------------------------------------------------------------------
 
+::: aside
+
+**Languages** 
+
+- **Spanish:** Native 
+
+- **English:** Upper Intermediate 
+
+- **Portuguese:** Intermediate
+
+- **French:** Elementary
+
+:::
 ```{r}
 print_section(position_data, 'grants')
 ```
@@ -205,7 +206,6 @@ print_section(position_data, 'volunteer_outreach')
 ```
 
 
-
 ```{r}
 if(PDF_EXPORT){
   cat("
@@ -223,5 +223,3 @@ Links {data-icon=link}
   })
 }
 ```
-
-

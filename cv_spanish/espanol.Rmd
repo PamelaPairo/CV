@@ -75,7 +75,7 @@ Aside
 ================================================================================
 
 
-![photo](pairo.png){width=80%}
+![photo](pairo.png){width=90%}
 
 Contacto {#contact}
 --------------------------------------------------------------------------------
@@ -118,7 +118,15 @@ Educación {data-icon=graduation-cap data-concise=true}
 position_data %>% print_section('education')
 ```
 
-Experiencia profesional {data-icon=chalkboard-teacher}
+Docencia {data-icon=chalkboard-teacher data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('teaching')
+```
+
+
+Experiencia profesional {data-icon=users}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -126,7 +134,7 @@ print_section(position_data, 'profesional')
 ```
 
 
-Cursos de posgrado destacados {data-icon=book}
+Cursos destacados {data-icon=book}
 --------------------------------------------------------------------------------
 
 
@@ -138,9 +146,9 @@ Publicaciones científicas {data-icon=file}
 --------------------------------------------------------------------------------
 ::: aside
 
-### Idiomas {#languages}
+**Idiomas**
 
-- **Inglés:** Avanzado
+- **Inglés:** Upper-Intermediate
 
 - **Portugués:** Intermedio
 
@@ -149,7 +157,7 @@ Publicaciones científicas {data-icon=file}
 :::
 
 ```{r}
-print_section(position_data, 'publications')
+position_data %>% print_section('publications')
 ```
 
 <!-- These breaks just force a new page so section doesnt get cut off -->
@@ -158,18 +166,18 @@ print_section(position_data, 'publications')
 Becas {data-icon=trophy}
 --------------------------------------------------------------------------------
 
-
-```{r}
-print_section(position_data, 'grants')
-```
-
-Presentaciones destacadas {data-icon=group}
---------------------------------------------------------------------------------
 ::: aside
 
 He participado como voluntaria en varios proyectos de investigacion en Argentina, Bolivia, Uruguay y Ecuador. Colaboré en tareas de rescate, rehabilitación y enriquecimiento de animales salvajes tales como los tortugas marinas, monos carayá, yaguaretés y pumas.
 
 :::
+
+```{r}
+print_section(position_data, 'grants')
+```
+
+Presentaciones destacadas {data-icon=user-friends}
+--------------------------------------------------------------------------------
 
 
 ```{r}
