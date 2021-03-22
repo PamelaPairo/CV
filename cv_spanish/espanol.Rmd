@@ -7,7 +7,7 @@ output:
     css: ['css/styles.css', 'resume']
     # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: true
-#knit: pagedown::chrome_print 
+knit: pagedown::chrome_print 
 ---
 
 
@@ -125,25 +125,9 @@ Docencia {data-icon=chalkboard-teacher data-concise=true}
 position_data %>% print_section('teaching')
 ```
 
-
-Experiencia profesional {data-icon=users}
+Becas {data-icon=trophy}
 --------------------------------------------------------------------------------
 
-```{r}
-print_section(position_data, 'profesional')
-```
-
-
-Cursos destacados {data-icon=book}
---------------------------------------------------------------------------------
-
-
-```{r}
-print_section(position_data, 'courses')
-```
-
-Publicaciones científicas {data-icon=file}
---------------------------------------------------------------------------------
 ::: aside
 
 **Idiomas**
@@ -156,14 +140,12 @@ Publicaciones científicas {data-icon=file}
 
 :::
 
+
 ```{r}
-position_data %>% print_section('publications')
+print_section(position_data, 'grants')
 ```
 
-<!-- These breaks just force a new page so section doesnt get cut off -->
-<!--<br>-->
-
-Becas {data-icon=trophy}
+Publicaciones científicas {data-icon=file}
 --------------------------------------------------------------------------------
 
 ::: aside
@@ -173,7 +155,27 @@ He participado como voluntaria en varios proyectos de investigacion en Argentina
 :::
 
 ```{r}
-print_section(position_data, 'grants')
+position_data %>% print_section('publications')
+```
+
+Cursos destacados {data-icon=book}
+--------------------------------------------------------------------------------
+
+
+```{r}
+print_section(position_data, 'courses')
+```
+
+
+<!-- These breaks just force a new page so section doesnt get cut off -->
+<!--<br>-->
+
+
+Experiencia profesional {data-icon=users}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'profesional')
 ```
 
 Presentaciones destacadas {data-icon=user-friends}
