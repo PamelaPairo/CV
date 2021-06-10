@@ -86,20 +86,26 @@ contact_info %>%
 ```
 
 
-
-Skills {#skills}
---------------------------------------------------------------------------------
-
-```{r}
-build_skill_bars(skills)
-```
-
-
-
 More info {#more-info}
 --------------------------------------------------------------------------------
 
 See full CV [**here**](https://cv-pamepairo.netlify.app/) 
+
+
+Programming Skills {#skills}
+--------------------------------------------------------------------------------
+
+<i class="fab fa-python"></i> `Python`
+
+<i class="fab fa-earth-americas"></i> `Google Earth Engine`
+
+<i class="fab fa-r-project"></i> `R`
+
+<i class="fas fa-code-branch"></i> `Git`
+
+<i class="fab fa-github"></i> `GitHub`
+
+<i class="fab fa-markdown"></i> `Markdown`
 
 
 Disclaimer {#disclaimer}
@@ -118,6 +124,14 @@ Main
 Pamela E. Pairo {#title}
 --------------------------------------------------------------------------------
 
+Professional Experience {data-icon=user-alt data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('profesional')
+```
+
+
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
@@ -126,17 +140,13 @@ Education {data-icon=graduation-cap data-concise=true}
 position_data %>% print_section('education')
 ```
 
-
-Publications {data-icon=file}
+Teaching Experience {data-icon=chalkboard-teacher data-concise=true}
 --------------------------------------------------------------------------------
 
-
 ```{r}
-print_section(position_data, 'publications')
+position_data %>% print_section('teaching')
 ```
 
-<!-- These breaks just force a new page so section doesnt get cut off -->
-<!--<br>-->
 
 Grants and Fellowships {data-icon=trophy}
 --------------------------------------------------------------------------------
@@ -152,22 +162,15 @@ print_section(position_data, 'grants')
 
 - **Spanish:** Native 
 
-- **English:** Advance 
+- **English:** Upper Intermediate
 
 - **Portuguese:**  Upper Intermediate
-
-- **French:** Elementary
 
 :::
 
 
 Selected Talks and Presentations {data-icon=group}
 --------------------------------------------------------------------------------
-::: aside
-
-I have participated as a volunteer in several projects in Latin America. I worked in the rescue and rehabilitation of wild animals such as pumas, jaguars, monkeys, and sea turtles.
-
-:::
 
 
 ```{r}
