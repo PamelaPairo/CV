@@ -69,13 +69,10 @@ position_data <- position_data %>%
   ) 
 ```
 
-
-
 Aside
 ================================================================================
 
-
-![photo](pairo.png){width=90%}
+![photo](pairo.png){width=80%}
 
 Contacto {#contact}
 --------------------------------------------------------------------------------
@@ -87,17 +84,26 @@ contact_info %>%
 
 
 
-Habilidades {#skills}
+Habilidades en programación {#programming}
 --------------------------------------------------------------------------------
 
-```{r}
-build_skill_bars(skills)
-```
+<i class="fab fa-python"></i> `Python`
+
+<i class="fab fa-r-project"></i> `R`
+
+<i class="fa fa-google-plus" aria-hidden="true"></i>
+ `Google Earth Engine`
+ 
+<i class="fas fa-globe"></i> `QGis`
+
+<i class="fas fa-code-branch"></i> `Git`
+
+<i class="fab fa-github"></i> `GitHub`
+
+<i class="fab fa-markdown"></i> `Markdown`
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
-
-Hecho con [**pagedown**](https://github.com/rstudio/pagedown). 
 
 Código fuente: [github.com/PamelaPairo/cv](https://github.com/PamelaPairo/CV).
 
@@ -110,6 +116,12 @@ Main
 Pamela E. Pairo {#title}
 --------------------------------------------------------------------------------
 
+Experiencia profesional {data-icon=users}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'profesional')
+```
 
 Educación {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
@@ -118,6 +130,7 @@ Educación {data-icon=graduation-cap data-concise=true}
 position_data %>% print_section('education')
 ```
 
+
 Docencia {data-icon=chalkboard-teacher data-concise=true}
 --------------------------------------------------------------------------------
 
@@ -125,8 +138,14 @@ Docencia {data-icon=chalkboard-teacher data-concise=true}
 position_data %>% print_section('teaching')
 ```
 
-Becas {data-icon=trophy}
+
+Cursos destacados {data-icon=book}
 --------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'courses')
+```
+
 
 ::: aside
 
@@ -136,47 +155,33 @@ Becas {data-icon=trophy}
 
 - **Portugués:** Intermedio
 
-- **Francés:** Básico
+
+**Becas**
+
+- <i class="far fa-star"></i>[Beca de Perfeccionamiento](https://www.argentina.gob.ar/ciencia/conae/convocatoria-becas-de-perfeccionamiento-conae/1er-llamado-gerencia-de-vinculacion-tecnologica)- CONAE
+
+- <i class="far fa-star"></i> Training and Travel Grants- British Ecological Society
+
+- <i class="far fa-star"></i> [rstudio::global(2021)](https://blog.rstudio.com/2020/11/30/diversity-scholarships/). Diversity Scholarship 
+
+- <i class="far fa-star"></i> [Training Grant for Early Career Researchers](https://www.nature.com/early-career-travel-grants/about/recipients?draft=marketing&platform=oscar&target=content)- Nature Research
+
+- <i class="far fa-star"></i> Estadía de Investigación- Liverpool- Reino Unido
+
+- <i class="far fa-star"></i> [Beca Doctoral del CONICET](https://convocatorias.conicet.gov.ar/becas/)
 
 :::
-
-
-```{r}
-print_section(position_data, 'grants')
-```
 
 Publicaciones científicas {data-icon=file}
 --------------------------------------------------------------------------------
-
-::: aside
-
-He participado como voluntaria en varios proyectos de investigacion en Argentina, Bolivia, Uruguay y Ecuador. Colaboré en tareas de rescate, rehabilitación y enriquecimiento de animales salvajes tales como los tortugas marinas, monos carayá, yaguaretés y pumas.
-
-:::
 
 ```{r}
 position_data %>% print_section('publications')
 ```
 
-Cursos destacados {data-icon=book}
---------------------------------------------------------------------------------
-
-
-```{r}
-print_section(position_data, 'courses')
-```
-
 
 <!-- These breaks just force a new page so section doesnt get cut off -->
 <!--<br>-->
-
-
-Experiencia profesional {data-icon=users}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'profesional')
-```
 
 Presentaciones destacadas {data-icon=user-friends}
 --------------------------------------------------------------------------------

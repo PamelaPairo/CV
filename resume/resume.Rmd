@@ -86,26 +86,25 @@ contact_info %>%
 ```
 
 
-More info {#more-info}
---------------------------------------------------------------------------------
 
-See full CV [**here**](https://cv-pamepairo.netlify.app/) 
-
-
-Programming Skills {#skills}
+Programming Skills {#programming}
 --------------------------------------------------------------------------------
 
 <i class="fab fa-python"></i> `Python`
 
-<i class="fab fa-earth-americas"></i> `Google Earth Engine`
-
 <i class="fab fa-r-project"></i> `R`
+
+<i class="fa fa-google-plus" aria-hidden="true"></i>
+ `Google Earth Engine`
+ 
+<i class="fas fa-globe"></i> `QGis`
 
 <i class="fas fa-code-branch"></i> `Git`
 
 <i class="fab fa-github"></i> `GitHub`
 
 <i class="fab fa-markdown"></i> `Markdown`
+
 
 
 Disclaimer {#disclaimer}
@@ -123,6 +122,8 @@ Main
 
 Pamela E. Pairo {#title}
 --------------------------------------------------------------------------------
+
+I am motivated data scientist from Argentina with strong background in statistics. 
 
 Professional Experience {data-icon=user-alt data-concise=true}
 --------------------------------------------------------------------------------
@@ -158,7 +159,15 @@ print_section(position_data, 'grants')
 
 ::: aside
 
-### Languages {#languages}
+**General Skills**
+
+- Data Curation and Visualization
+
+- Statistical Analysis
+
+- Machine Learning
+
+**Languages** 
 
 - **Spanish:** Native 
 
@@ -167,13 +176,4 @@ print_section(position_data, 'grants')
 - **Portuguese:**  Upper Intermediate
 
 :::
-
-
-Selected Talks and Presentations {data-icon=group}
---------------------------------------------------------------------------------
-
-
-```{r}
-print_section(position_data, 'presentations')
-```
 
