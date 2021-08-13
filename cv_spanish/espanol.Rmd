@@ -1,5 +1,5 @@
 ---
-title: CV de Pamela Pairo"
+title: CV de Pamela Pairo
 author: Pamela Pairo
 date: "`r Sys.Date()`"
 output:
@@ -102,6 +102,18 @@ Habilidades en programación {#programming}
 
 <i class="fab fa-markdown"></i> `Markdown`
 
+Habilidades generales {#skills}
+--------------------------------------------------------------------------------
+
+Análisis y visualización de datos
+
+Estadística Descriptiva
+
+Análisis estadístico (GLM, GLMM, Regresión, PCA, análisis discriminante, SEM, selección de modelos)
+
+Machine Learning (Regresión lineal y logística, árboles de decisión, SVM, random forest, KNN)
+
+
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
 
@@ -120,7 +132,7 @@ Experiencia profesional {data-icon=users}
 --------------------------------------------------------------------------------
 
 ```{r}
-print_section(position_data, 'profesional')
+position_data %>% print_section('profesional')
 ```
 
 Educación {data-icon=graduation-cap data-concise=true}
@@ -146,7 +158,6 @@ Cursos destacados {data-icon=book}
 print_section(position_data, 'courses')
 ```
 
-
 ::: aside
 
 **Idiomas**
@@ -166,7 +177,7 @@ print_section(position_data, 'courses')
 
 - <i class="far fa-star"></i> [Training Grant for Early Career Researchers](https://www.nature.com/early-career-travel-grants/about/recipients?draft=marketing&platform=oscar&target=content)- Nature Research
 
-- <i class="far fa-star"></i> Estadía de Investigación- Liverpool- Reino Unido
+- <i class="far fa-star"></i> Estadía de Investigación- Liverpool- Reino Unido. BEC.AR
 
 - <i class="far fa-star"></i> [Beca Doctoral del CONICET](https://convocatorias.conicet.gov.ar/becas/)
 
@@ -183,11 +194,4 @@ position_data %>% print_section('publications')
 <!-- These breaks just force a new page so section doesnt get cut off -->
 <!--<br>-->
 
-Presentaciones destacadas {data-icon=user-friends}
---------------------------------------------------------------------------------
-
-
-```{r}
-print_section(position_data, 'presentations')
-```
 
