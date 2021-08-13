@@ -149,14 +149,6 @@ position_data %>% print_section('teaching')
 ```
 
 
-Grants and Fellowships {data-icon=trophy}
---------------------------------------------------------------------------------
-
-
-```{r}
-print_section(position_data, 'grants')
-```
-
 ::: aside
 
 **General Skills**
@@ -174,6 +166,20 @@ print_section(position_data, 'grants')
 - **English:** Upper Intermediate
 
 - **Portuguese:**  Upper Intermediate
+
+**Grants and fellowships**
+
+- <i class="far fa-star"></i>[Improvement Scholarship](https://www.argentina.gob.ar/ciencia/conae/convocatoria-becas-de-perfeccionamiento-conae/1er-llamado-gerencia-de-vinculacion-tecnologica)- CONAE
+
+- <i class="far fa-star"></i> Training and Travel Grants- British Ecological Society
+
+- <i class="far fa-star"></i> [rstudio::global(2021)](https://blog.rstudio.com/2020/11/30/diversity-scholarships/). Diversity Scholarship 
+
+- <i class="far fa-star"></i> [Training Grant for Early Career Researchers](https://www.nature.com/early-career-travel-grants/about/recipients?draft=marketing&platform=oscar&target=content)- Nature Research
+
+- <i class="far fa-star"></i> Research Stay- Liverpool- Reino Unido. BEC.AR
+
+- <i class="far fa-star"></i> [Doctoral scholarchip from CONICET](https://convocatorias.conicet.gov.ar/becas/)
 
 :::
 
