@@ -72,8 +72,6 @@ position_data <- position_data %>%
 Aside
 ================================================================================
 
-![photo](pairo.png){width=80%}
-
 Contacto {#contact}
 --------------------------------------------------------------------------------
 
@@ -91,7 +89,7 @@ Habilidades en programación {#programming}
 
 <i class="fab fa-r-project"></i> `R`
 
-<i class="fa fa-google-plus" aria-hidden="true"></i>
+<i class="fas fa-globe-americas"></i>
  `Google Earth Engine`
  
 <i class="fas fa-globe"></i> `QGis`
@@ -105,13 +103,15 @@ Habilidades en programación {#programming}
 Habilidades generales {#skills}
 --------------------------------------------------------------------------------
 
-Análisis y visualización de datos
+<i class="fas fa-check"></i> Análisis y visualización de datos
 
-Estadística Descriptiva
+<i class="fas fa-check"></i> Estadística Descriptiva
 
-Análisis estadístico (GLM, GLMM, Regresión, PCA, análisis discriminante, SEM, selección de modelos)
+<i class="fas fa-check"></i> Análisis estadístico (GLM, GLMM, Regresión, PCA, análisis discriminante, SEM, selección de modelos)
 
-Machine Learning (Regresión lineal y logística, árboles de decisión, SVM, random forest, KNN)
+<i class="fas fa-check"></i> Machine Learning (Regresión lineal y logística, árboles de decisión, SVM, random forest, KNN)
+
+<i class="fas fa-check"></i> Teledetección y SIG.
 
 
 Disclaimer {#disclaimer}
@@ -169,17 +169,17 @@ print_section(position_data, 'courses')
 
 **Becas**
 
-- <i class="far fa-star"></i>[Beca de Perfeccionamiento](https://www.argentina.gob.ar/ciencia/conae/convocatoria-becas-de-perfeccionamiento-conae/1er-llamado-gerencia-de-vinculacion-tecnologica)- CONAE
+- <i class="fas fa-trophy"></i> [Beca de Perfeccionamiento](https://www.argentina.gob.ar/ciencia/conae/convocatoria-becas-de-perfeccionamiento-conae/1er-llamado-gerencia-de-vinculacion-tecnologica)- CONAE
 
-- <i class="far fa-star"></i> Training and Travel Grants- British Ecological Society
+- <i class="fas fa-trophy"></i> Training and Travel Grants- British Ecological Society
 
-- <i class="far fa-star"></i> [rstudio::global(2021)](https://blog.rstudio.com/2020/11/30/diversity-scholarships/). Diversity Scholarship 
+- <i class="fas fa-trophy"></i> [rstudio::global(2021)](https://blog.rstudio.com/2020/11/30/diversity-scholarships/). Diversity Scholarship 
 
-- <i class="far fa-star"></i> [Training Grant for Early Career Researchers](https://www.nature.com/early-career-travel-grants/about/recipients?draft=marketing&platform=oscar&target=content)- Nature Research
+- <i class="fas fa-trophy"></i> [Training Grant for Early Career Researchers](https://www.nature.com/early-career-travel-grants/about/recipients?draft=marketing&platform=oscar&target=content)- Nature Research
 
-- <i class="far fa-star"></i> Estadía de Investigación- Liverpool- Reino Unido. BEC.AR
+- <i class="fas fa-trophy"></i> Estadía de Investigación- Liverpool- Reino Unido. BEC.AR
 
-- <i class="far fa-star"></i> [Beca Doctoral del CONICET](https://convocatorias.conicet.gov.ar/becas/)
+- <i class="fas fa-trophy"></i> [Beca Doctoral del CONICET](https://convocatorias.conicet.gov.ar/becas/)
 
 :::
 
