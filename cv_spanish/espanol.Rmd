@@ -1,0 +1,197 @@
+---
+title: CV de Pamela Pairo
+author: Pamela Pairo
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['css/styles.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: true
+knit: pagedown::chrome_print 
+---
+
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+library(tidyverse)
+library(glue)
+
+# ======================================================================
+# These variables determine how the the data is loaded and how the exports are
+# done.
+
+# Is data stored in google sheets? If no data will be gather from the csvs/
+# folder in project
+using_googlesheets <- TRUE
+
+# Just the copied URL from the sheet
+positions_sheet_loc <- "https://docs.google.com/spreadsheets/d/165RD7Lo5v0zcRE1ioAB91YUVJTNw75_Ql4KCW0S0VnI/edit#gid=1406459246"
+
+# Is this sheet available for anyone to read? If you're using a private sheet
+# set this to false and go to gather_data.R and run the data loading manually
+# once to cache authentication
+sheet_is_publicly_readable <- TRUE
+
+# Is the goal of this knit to build a document that is exported to PDF? If so
+# set this to true to have links turned into footnotes at the end of the
+# document
+PDF_EXPORT <- FALSE
+
+
+# A global (gasp) variable that holds all the links that were inserted for
+# placement at the end
+links <- c()
+
+# ======================================================================
+# Now we source two external scripts. One contains functions for building the
+# text output and the other loads up our data from either googlesheets or csvs
+
+# Functions for building sections from CSV data
+source('parsing_functions.R') 
+
+# Load data for CV/Resume
+source('gather_data.R')
+
+# Now we just need to filter down the position data to include less verbose
+# categories and only the entries we have designated for the resume
+position_data <- position_data %>% 
+  filter(in_resume) %>% 
+  mutate(
+    # Build some custom sections by collapsing others
+    section = case_when(
+      section %in% c('research_positions', 'industry_positions') ~ 'positions', 
+      section %in% c('data_science_writings', 'by_me_press') ~ 'writings',
+      TRUE ~ section
+    )
+  ) 
+```
+
+Aside
+================================================================================
+
+Contacto {#contact}
+--------------------------------------------------------------------------------
+
+```{r}
+contact_info %>% 
+  glue_data("- <i class='fa fa-{icon}'></i> {contact}")
+```
+
+
+
+Habilidades en programación {#programming}
+--------------------------------------------------------------------------------
+
+<i class="fab fa-python"></i> `Python`
+
+<i class="fab fa-r-project"></i> `R`
+
+<i class="fas fa-globe-americas"></i>
+ `Google Earth Engine`
+ 
+<i class="fas fa-database"></i> `SQL`
+ 
+<i class="fas fa-code-branch"></i> `Git`
+
+<i class="fab fa-github"></i> `GitHub`
+
+Habilidades generales {#skills}
+--------------------------------------------------------------------------------
+
+<i class="fas fa-check"></i> Análisis y visualización de datos
+
+<i class="fas fa-check"></i> Estadística Descriptiva
+
+<i class="fas fa-check"></i> Análisis estadístico (GLM, GLMM, Regresión, PCA, análisis discriminante, SEM, R-INLA)
+
+<i class="fas fa-check"></i> Machine Learning (Regresión lineal y logística, árboles de decisión, SVM, random forest, KNN)
+
+<i class="fas fa-check"></i> Teledetección y SIG.
+
+
+Disclaimer {#disclaimer}
+--------------------------------------------------------------------------------
+
+Código fuente: [github.com/PamelaPairo/cv](https://github.com/PamelaPairo/CV).
+
+Última actualización `r Sys.Date()`.
+
+
+Main
+================================================================================
+
+Pamela E. Pairo {#title}
+--------------------------------------------------------------------------------
+
+Experiencia profesional {data-icon=users}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('profesional')
+```
+
+Educación {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('education')
+```
+
+
+Docencia {data-icon=chalkboard-teacher data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('teaching')
+```
+
+
+Cursos destacados {data-icon=book}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'courses')
+```
+
+::: aside
+
+Participo activamente dentro de la comunidad de R-Ladies y en la organización de [LatinR 2021](https://latin-r.com/).
+
+**Idiomas**
+
+- **Inglés:** Upper-Intermediate
+
+- **Portugués:** Intermedio
+
+
+**Becas**
+
+- <i class="fas fa-trophy"></i> [Beca de Perfeccionamiento](https://www.argentina.gob.ar/ciencia/conae/convocatoria-becas-de-perfeccionamiento-conae/1er-llamado-gerencia-de-vinculacion-tecnologica)- CONAE
+
+- <i class="fas fa-trophy"></i> Training and Travel Grants- British Ecological Society
+
+- <i class="fas fa-trophy"></i> [rstudio::global(2021)](https://blog.rstudio.com/2020/11/30/diversity-scholarships/). Diversity Scholarship 
+
+- <i class="fas fa-trophy"></i> [Training Grant for Early Career Researchers](https://www.nature.com/early-career-travel-grants/about/recipients?draft=marketing&platform=oscar&target=content)- Nature Research
+
+- <i class="fas fa-trophy"></i> Estadía de Investigación- Liverpool- Reino Unido. BEC.AR
+
+- <i class="fas fa-trophy"></i> [Beca Doctoral del CONICET](https://convocatorias.conicet.gov.ar/becas/)
+
+:::
+
+Publicaciones científicas {data-icon=file}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('publications')
+```
+
+
+<!-- These breaks just force a new page so section doesnt get cut off -->
+<!--<br>-->
+
+
