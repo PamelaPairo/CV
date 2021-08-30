@@ -197,7 +197,7 @@ position_data %>% print_section('courses')
 
 - <i class="fas fa-trophy"></i> Research Stay- Liverpool- Reino Unido. BEC.AR
 
-- <i class="far fa-star"></i> [Doctoral scholarchip CONICET](https://convocatorias.conicet.gov.ar/becas/)
+- <i class="fas fa-trophy"></i> [Doctoral scholarchip CONICET](https://convocatorias.conicet.gov.ar/becas/)
 
 :::
 
