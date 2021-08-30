@@ -85,8 +85,6 @@ contact_info %>%
   glue_data("- <i class='fa fa-{icon}'></i> {contact}")
 ```
 
-
-
 Programming Skills {#programming}
 --------------------------------------------------------------------------------
 
@@ -123,8 +121,6 @@ Main
 Pamela E. Pairo {#title}
 --------------------------------------------------------------------------------
 
-I am motivated data scientist from Argentina with strong background in statistics. 
-
 Professional Experience {data-icon=user-alt data-concise=true}
 --------------------------------------------------------------------------------
 
@@ -148,6 +144,12 @@ Teaching Experience {data-icon=chalkboard-teacher data-concise=true}
 position_data %>% print_section('teaching')
 ```
 
+Featured Courses {data-icon=book}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('courses')
+```
 
 ::: aside
 
@@ -179,7 +181,17 @@ position_data %>% print_section('teaching')
 
 - <i class="far fa-star"></i> Research Stay- Liverpool- Reino Unido. BEC.AR
 
-- <i class="far fa-star"></i> [Doctoral scholarchip from CONICET](https://convocatorias.conicet.gov.ar/becas/)
+- <i class="far fa-star"></i> [Doctoral scholarchip CONICET](https://convocatorias.conicet.gov.ar/becas/)
 
 :::
+
+
+Scientific Publications {data-icon=newspaper data-concise=true}
+--------------------------------------------------------------------------------
+
+
+```{r}
+position_data %>% print_section('publications')
+```
+
 
