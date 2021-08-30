@@ -158,7 +158,7 @@ print_section(position_data, 'courses')
 
 ::: aside
 
-Participo activamente dentro de la comunidad de R-Ladies y en la organización de [LatinR 2021](https://latin-r.com/).
+Soy Instructora Certificada [The Carpentries](https://carpentries.org/).Participo activamente dentro de la comunidad de R-Ladies y en la organización de [LatinR 2021](https://latin-r.com/).
 
 **Idiomas**
 
