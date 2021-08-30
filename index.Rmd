@@ -7,7 +7,7 @@ output:
     css: ['css/styles.css', 'resume']
     # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: true
-#knit: pagedown::chrome_print
+knit: pagedown::chrome_print
 ---
 
 ```{r, include=FALSE}
@@ -98,14 +98,23 @@ contact_info %>%
 
 
 
-Skills {#skills}
+Programming Skills {#programming}
 --------------------------------------------------------------------------------
 
-```{r}
-build_skill_bars(skills)
-```
+<i class="fab fa-python"></i> `Python`
 
+<i class="fab fa-r-project"></i> `R`
 
+<i class="fa fa-google-plus" aria-hidden="true"></i>
+ `Google Earth Engine`
+ 
+<i class="fas fa-globe"></i> `QGis`
+
+<i class="fas fa-code-branch"></i> `Git`
+
+<i class="fab fa-github"></i> `GitHub`
+
+<i class="fab fa-markdown"></i> `Markdown`
 
 Disclaimer {#disclaimer}
 --------------------------------------------------------------------------------
@@ -115,7 +124,6 @@ Made with the R package [**pagedown**](https://github.com/rstudio/pagedown) and 
 The source code is available at [**here**](https://github.com/PamelaPairo/CV).
 
 Last updated on `r Sys.Date()`.
-
 
 
 Main
@@ -130,81 +138,80 @@ print_text_block(text_blocks, 'intro')
 ```
 
 
+Professional Experience {data-icon=user-alt data-concise=true}
+--------------------------------------------------------------------------------
+
+```{r}
+position_data %>% print_section('profesional')
+```
+
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
-print_section(position_data, "education")
+position_data %>% print_section('education')
 ```
 
-Professional experience {data-icon=users}
+Teaching Experience {data-icon=chalkboard-teacher data-concise=true}
 --------------------------------------------------------------------------------
 
 ```{r}
-print_section(position_data, 'profesional')
+position_data %>% print_section('teaching')
 ```
 
-
-Research Projects {data-icon=laptop}
+Featured Courses {data-icon=book}
 --------------------------------------------------------------------------------
 
 ```{r}
-print_section(position_data, 'research_proj')
+position_data %>% print_section('courses')
 ```
-
-Publications {data-icon=newspaper}
---------------------------------------------------------------------------------
-
-
-
-```{r}
-print_section(position_data, 'publications')
-```
-
-
-
-Grants and Fellowships {data-icon=trophy}
---------------------------------------------------------------------------------
 
 ::: aside
+
+**General Skills**
+
+<i class="fas fa-check"></i> Data Curation and Visualization
+
+<i class="fas fa-check"></i> Statistical Analysis
+
+<i class="fas fa-check"></i> Machine Learning
 
 **Languages** 
 
 - **Spanish:** Native 
 
-- **English:** Upper Intermediate 
+- **English:** Upper Intermediate
 
-- **Portuguese:** Intermediate
+- **Portuguese:**  Upper Intermediate
 
-- **French:** Elementary
+**Grants and fellowships**
+
+- <i class="fas fa-trophy"></i>[Improvement Scholarship](https://www.argentina.gob.ar/ciencia/conae/convocatoria-becas-de-perfeccionamiento-conae/1er-llamado-gerencia-de-vinculacion-tecnologica)- CONAE
+
+- <i class="fas fa-trophy"></i> Training and Travel Grants- British Ecological Society
+
+- <i class="fas fa-trophy"></i> [rstudio::global(2021)](https://blog.rstudio.com/2020/11/30/diversity-scholarships/). Diversity Scholarship 
+
+- <i class="fas fa-trophy"></i> [Training Grant for Early Career Researchers](https://www.nature.com/early-career-travel-grants/about/recipients?draft=marketing&platform=oscar&target=content)- Nature Research
+
+- <i class="fas fa-trophy"></i> Research Stay- Liverpool- Reino Unido. BEC.AR
+
+- <i class="far fa-star"></i> [Doctoral scholarchip CONICET](https://convocatorias.conicet.gov.ar/becas/)
 
 :::
-```{r}
-print_section(position_data, 'grants')
-```
 
 <!-- These breaks just force a new page so section doesnt get cut off -->
 <!--<br>-->
 
 
-Selected Talks and Presentations {data-icon=group}
+Scientific Publications {data-icon=newspaper data-concise=true}
 --------------------------------------------------------------------------------
 
 
 ```{r}
-print_section(position_data, 'presentations')
+position_data %>% print_section('publications')
 ```
-
-
-Volunteer and Outreach {data-icon=hands-helping}
---------------------------------------------------------------------------------
-
-
-```{r}
-print_section(position_data, 'volunteer_outreach')
-```
-
 
 ```{r}
 if(PDF_EXPORT){
