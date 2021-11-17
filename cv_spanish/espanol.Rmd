@@ -89,14 +89,13 @@ Habilidades en programación {#programming}
 
 <i class="fab fa-r-project"></i> `R`
 
+<i class="fas fa-database"></i> `SQL`
+
 <i class="fas fa-globe-americas"></i>
  `Google Earth Engine`
- 
-<i class="fas fa-database"></i> `SQL`
- 
+
 <i class="fas fa-code-branch"></i> `Git`
 
-<i class="fab fa-github"></i> `GitHub`
 
 Habilidades generales {#skills}
 --------------------------------------------------------------------------------
@@ -107,7 +106,7 @@ Habilidades generales {#skills}
 
 <i class="fas fa-check"></i> Análisis estadístico (GLM, GLMM, Regresión, PCA, análisis discriminante, SEM, R-INLA)
 
-<i class="fas fa-check"></i> Machine Learning (Regresión lineal y logística, árboles de decisión, SVM, random forest, KNN)
+<i class="fas fa-check"></i> Aprendizaje Supervizado, Aprendizaje No Supervisado, Deep Learning.
 
 <i class="fas fa-check"></i> Teledetección y SIG.
 
@@ -123,7 +122,7 @@ Código fuente: [github.com/PamelaPairo/cv](https://github.com/PamelaPairo/CV).
 Main
 ================================================================================
 
-Pamela E. Pairo {#title}
+Dra. Pamela E. Pairo {#title}
 --------------------------------------------------------------------------------
 
 Experiencia profesional {data-icon=users}
@@ -148,17 +147,9 @@ Docencia {data-icon=chalkboard-teacher data-concise=true}
 position_data %>% print_section('teaching')
 ```
 
-
-Cursos destacados {data-icon=book}
---------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'courses')
-```
-
 ::: aside
 
-Soy Instructora Certificada [The Carpentries](https://carpentries.org/).Participo activamente dentro de la comunidad de R-Ladies y en la organización de [LatinR 2021](https://latin-r.com/).
+Soy Instructora Certificada [The Carpentries](https://carpentries.org/).Participo activamente dentro de la comunidad de R-Ladies y en la organización y en el Comité Científico de [LatinR 2021](https://latin-r.com/equipo/).
 
 **Idiomas**
 
@@ -182,6 +173,14 @@ Soy Instructora Certificada [The Carpentries](https://carpentries.org/).Particip
 - <i class="fas fa-trophy"></i> [Beca Doctoral del CONICET](https://convocatorias.conicet.gov.ar/becas/)
 
 :::
+
+Cursos destacados {data-icon=book}
+--------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'courses')
+```
+
 
 Publicaciones científicas {data-icon=file}
 --------------------------------------------------------------------------------
