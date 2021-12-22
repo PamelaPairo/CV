@@ -100,13 +100,13 @@ Habilidades en programación {#programming}
 Habilidades generales {#skills}
 --------------------------------------------------------------------------------
 
-<i class="fas fa-check"></i> Análisis y visualización de datos
+<i class="fas fa-check"></i> Análisis y visualización de datos (Tidyverse, Numpy, Pandas)
 
 <i class="fas fa-check"></i> Estadística Descriptiva
 
 <i class="fas fa-check"></i> Análisis estadístico (GLM, GLMM, Regresión, PCA, análisis discriminante, SEM, R-INLA)
 
-<i class="fas fa-check"></i> Aprendizaje Supervizado, Aprendizaje No Supervisado, Deep Learning.
+<i class="fas fa-check"></i> Aprendizaje Supervizado, Aprendizaje No Supervisado, Deep Learning, NLP.
 
 <i class="fas fa-check"></i> Teledetección y SIG.
 
@@ -149,7 +149,7 @@ position_data %>% print_section('teaching')
 
 ::: aside
 
-Soy Instructora Certificada [The Carpentries](https://carpentries.org/).Participo activamente dentro de la comunidad de R-Ladies y en la organización y en el Comité Científico de [LatinR 2021](https://latin-r.com/equipo/).
+Soy Instructora Certificada [The Carpentries](https://carpentries.org/).Participo activamente dentro de la comunidad de R-Ladies y en la organización y en el Comité Científico de [LatinR 2021](https://latin-r.com/equipo/). 
 
 **Idiomas**
 
@@ -188,7 +188,6 @@ Publicaciones científicas {data-icon=file}
 ```{r}
 position_data %>% print_section('publications')
 ```
-
 
 <!-- These breaks just force a new page so section doesnt get cut off -->
 <!--<br>-->
