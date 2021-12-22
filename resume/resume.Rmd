@@ -7,7 +7,7 @@ output:
     css: ['css/styles.css', 'resume']
     # set it to true for a self-contained HTML page but it'll take longer to render
     self_contained: true
-#knit: pagedown::chrome_print 
+knit: pagedown::chrome_print 
 ---
 
 
@@ -75,8 +75,6 @@ Aside
 ================================================================================
 
 
-![photo](pairo.png){width=80%}
-
 Contact {#contact}
 --------------------------------------------------------------------------------
 
@@ -92,17 +90,23 @@ Programming Skills {#programming}
 
 <i class="fab fa-r-project"></i> `R`
 
-<i class="fa fa-google-plus" aria-hidden="true"></i>
+<i class="fas fa-database"></i> `SQL`
+
+<i class="fas fa-globe-americas"></i>
  `Google Earth Engine`
- 
-<i class="fas fa-globe"></i> `QGis`
 
 <i class="fas fa-code-branch"></i> `Git`
 
-<i class="fab fa-github"></i> `GitHub`
+General Skills {#skills}
+--------------------------------------------------------------------------------
 
-<i class="fab fa-markdown"></i> `Markdown`
+<i class="fas fa-check"></i> Data Curation and Visualization (Tidyverse, Numpy, Pandas)
 
+<i class="fas fa-check"></i> Statistical Analysis (GLM, GLMM, Regression, PCA, Discriminant Analysis, SEM, R-INLA)
+
+<i class="fas fa-check"></i> Supervised machine learning, Unsupervised machine learning, Deep Learning, NLP.
+
+<i class="fas fa-check"></i> GIS 
 
 
 Disclaimer {#disclaimer}
@@ -118,7 +122,7 @@ Last updated on `r Sys.Date()`.
 Main
 ================================================================================
 
-Pamela E. Pairo {#title}
+Dr. Pamela E. Pairo {#title}
 --------------------------------------------------------------------------------
 
 Professional Experience {data-icon=user-alt data-concise=true}
@@ -153,13 +157,7 @@ position_data %>% print_section('courses')
 
 ::: aside
 
-**General Skills**
-
-- Data Curation and Visualization
-
-- Statistical Analysis
-
-- Machine Learning
+I’m a [Software Carpentries Certified Instructor](https://carpentries.org/).I'm an active member of the R-Ladies community and in the organization and Scientific Committee of [LatinR 2021](https://latin-r.com/equipo/).
 
 **Languages** 
 
@@ -171,17 +169,17 @@ position_data %>% print_section('courses')
 
 **Grants and fellowships**
 
-- <i class="far fa-star"></i>[Improvement Scholarship](https://www.argentina.gob.ar/ciencia/conae/convocatoria-becas-de-perfeccionamiento-conae/1er-llamado-gerencia-de-vinculacion-tecnologica)- CONAE
+- <i class="fas fa-trophy"></i>[Improvement Scholarship](https://www.argentina.gob.ar/ciencia/conae/convocatoria-becas-de-perfeccionamiento-conae/1er-llamado-gerencia-de-vinculacion-tecnologica)- CONAE
 
-- <i class="far fa-star"></i> Training and Travel Grants- British Ecological Society
+- <i class="fas fa-trophy"></i> Training and Travel Grants- British Ecological Society
 
-- <i class="far fa-star"></i> [rstudio::global(2021)](https://blog.rstudio.com/2020/11/30/diversity-scholarships/). Diversity Scholarship 
+- <i class="fas fa-trophy"></i> [rstudio::global(2021)](https://blog.rstudio.com/2020/11/30/diversity-scholarships/). Diversity Scholarship 
 
-- <i class="far fa-star"></i> [Training Grant for Early Career Researchers](https://www.nature.com/early-career-travel-grants/about/recipients?draft=marketing&platform=oscar&target=content)- Nature Research
+- <i class="fas fa-trophy"></i> [Training Grant for Early Career Researchers](https://www.nature.com/early-career-travel-grants/about/recipients?draft=marketing&platform=oscar&target=content)- Nature Research
 
-- <i class="far fa-star"></i> Research Stay- Liverpool- Reino Unido. BEC.AR
+- <i class="fas fa-trophy"></i> Research Stay- Liverpool- Reino Unido. BEC.AR
 
-- <i class="far fa-star"></i> [Doctoral scholarchip CONICET](https://convocatorias.conicet.gov.ar/becas/)
+- <i class="fas fa-trophy"></i> [Doctoral scholarchip CONICET](https://convocatorias.conicet.gov.ar/becas/)
 
 :::
 
